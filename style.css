@@ -1,6 +1,11 @@
 body
 {
-    background: #CCCCCC   
+  
+}
+
+h1
+{
+    padding-left: 20px;
 }
 
 #Banner
@@ -9,12 +14,13 @@ body
   height: 650px;
 }
 
-.principais
+.principal
 {
-    background: #CCCCCC  
+    background: #CCCCCC;
+    padding: 20px;
 }
 
-h1
+h2
 {
     text-align: center;
     border: 10px solid black;
@@ -39,7 +45,7 @@ em strong
     color: #FF0000;
 }
 
-h2
+h3
 {
     text-align: center;
     border: 7px solid black;
@@ -58,10 +64,18 @@ h2
 .beneficios
 {
     background:#FFFFFF;
+    padding: 10px;
+}
+
+ul
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 10%;
 }
 
 #beneficios_img
 {
-    width: 100%;
-    height: 650px;
+    width: 50%;
 }
