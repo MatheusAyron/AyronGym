@@ -3,7 +3,7 @@ body
     background: #E5E5E5;
     Width :100%;
     Height :1867px;
-    Top :750px;
+    Top :100%;
     Left :-92px;
 }
 
@@ -13,9 +13,18 @@ header
     height: 289px;
     left: 0px;
     top: 0px;
+    padding: 20px 0;  /*importante*/ 
     background: 
     linear-gradient(180deg, #29B6D1 0%, rgba(196, 196, 196, 0) 100%),
     #476BA0;
+}
+
+.caixa  /*O que faz os itens não ficare flutuando(quando tirar zoom)*/
+{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+
 }
 
 #logo
@@ -24,8 +33,37 @@ header
     Width: 270px;
     Height: 316px;
     Top :-13px;
-    Left :-1px;
+    Left :-200px;
 }
+
+nav
+{
+    position: absolute;
+    top: 152px;
+    right: -30px;
+
+}
+
+nav li
+{
+    display: inline;
+    margin: 0 0 0 15px
+}
+
+nav a
+{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bolder;
+    font-size: 22px;
+    line-height: -50px;
+
+    font-style: normal;
+    text-decoration: none;
+    font-family: Rozha One;
+
+}
+
 
 h1
 {

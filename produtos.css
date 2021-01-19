@@ -13,9 +13,18 @@ header
     height: 289px;
     left: 0px;
     top: 0px;
+    padding: 20px 0;  /*importante*/ 
     background: 
     linear-gradient(180deg, #29B6D1 0%, rgba(196, 196, 196, 0) 100%),
     #476BA0;
+}
+
+.caixa  /*O que faz os itens não ficare flutuando(quando tirar zoom)*/
+{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+
 }
 
 #titulo
@@ -23,7 +32,7 @@ header
     position: absolute;
     width: 353px;
     height: 87px;
-    left: 251px;
+    left: 35px;
     top: 118px;
     
     font-family: Roboto;
@@ -41,12 +50,21 @@ header
     Width: 270px;
     Height: 316px;
     Top :-13px;
-    Left :-1px;
+    Left :-200px;
+}
+
+nav
+{
+    position: absolute;
+    top: 152px;
+    right: -30px;
+
 }
 
 nav li
 {
     display: inline;
+    margin: 0 0 0 15px
 }
 
 nav a
@@ -54,60 +72,11 @@ nav a
     text-transform: uppercase;
     color: #000000;
     font-weight: bolder;
-}
+    font-size: 22px;
+    line-height: -50px;
 
-#home
-{
-    position: absolute;
-    width: 79px;
-    height: 43px;
-    left: 780px;
-    top: 152px;
-    
-    font-family: Rozha One;
     font-style: normal;
-    font-size: 20px;
-    line-height: 43px;
-}
-
-#produtos
-{
-    position: absolute;
-    width: 144px;
-    height: 43px;
-    left: 900px;
-    top: 152px;
-
+    text-decoration: none;
     font-family: Rozha One;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 43px;
-}
 
-#contato
-{
-    position: absolute;
-    width: 126px;
-    height: 43px;
-    left: 1050px;
-    top: 152px;
-
-    font-family: Rozha One;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 43px;
-}
-
-#about_us
-{
-    position: absolute;
-    width: 133px;
-    height: 43px;
-    left: 1200px;
-    top: 152px;
-    
-    font-family: Rozha One;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 43px;  
 }
