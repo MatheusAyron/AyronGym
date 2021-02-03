@@ -81,6 +81,13 @@ nav a
 
 }
 
+nav a:hover
+{
+    /*QUANDO PASSO A SETA EM CIMA MUDA A COR DO LUGAR*/
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
 .produtos
 {
     width: 940px;
@@ -95,9 +102,29 @@ nav a
     width: 30%;
     vertical-align: top;  
     margin: 0 1.5%;
-    padding: 30px 20px;
+    padding: 50px 20px;
     box-sizing: border-box;
+
+    /*Os proximos cod e os do quadrado legal*/
+    border: 3px solid #000000;
+    border-radius: 20px;
 }
+
+.produtos li:hover
+{
+    border-color:  #37B1CC;
+}
+
+.produtos li:active
+{
+    border-color:  #FFFFFF;
+}
+
+.produtos li:hover h2
+{
+    font-size: 48px;
+}
+
 
 .produtos h2
 {
@@ -123,17 +150,7 @@ nav a
 
 
 
-.imagem-produto-garrafa
+.imagem-produtos
 {
-    width: 187px;   
-}
-
-.imagem-produto-camiseta
-{
-    width: 195px;
-}
-
-.imagem-produto-tenis
-{
-    width: 195px;
+    width: 195px;   
 }
