@@ -2,7 +2,7 @@ body
 {
     background: #E5E5E5;
     Width :100%;
-    Height :1867px;
+    Height :100%;
     Top :100%;
     Left :-92px;
 }
@@ -92,7 +92,7 @@ nav a:hover
 {
     width: 940px;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .produtos li
@@ -148,9 +148,35 @@ nav a:hover
     font-size: 20px;
 }
 
-
-
 .imagem-produtos
 {
     width: 195px;   
 }
+
+.logo-rodape
+{
+
+    Width: 270px;
+    Height: 290px;
+    
+}
+
+
+footer
+{
+    text-align: center;
+    background: linear-gradient(180deg, #29B6D1 0%, rgba(196, 196, 196, 0) 100%), #476BA0;
+    
+}
+
+.copyright
+{
+    padding-block: 1%;
+}
+
+
+
+
+
+
+
