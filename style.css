@@ -76,39 +76,45 @@ nav a:hover
     text-decoration: underline;
 }
 
+/*parte principal da pagina*/
+
 .principal
 {
-    position: absolute;
-    width: 828px;
+    position: relative;
+    top: -80px;
+    width: 800px;
     height: 1589px;
-    left: 312px;
-    top: 238px;
+    margin: 0 auto;  
+    
     background: #FFFFFF;
     border-radius: 30px;
-
+ 
 }
 
+.principal li
+{
+    display: inline-block;
+
+    width: 50%;
+    
+}
 
 #foto_principal
 {
-    position: absolute;
-    width: 828px;
-    height: 422px;
-    left: 0px;
-    top: 0px;
+    width: 800px;
+    left: 312px;
+    top: 204px; 
     background: url(Banner.jpg);
     border-radius: 0px 0px 10px 10px;
-
 }
 
 h2
 {
-    position: absolute;
+    position: relative;
     width: 293px;
     height: 65px;
     left: 48px;
-    top: 443px;
-    font-family: nunito;
+    top: 50px;
     font-style: normal;
     font-weight: 600;
     font-size: 52px;
@@ -118,14 +124,12 @@ h2
     color: #3BA3B9;
 }
 
-#texto_principal
+.texto_principal
 {
-    position: absolute;
-    width: 543px;
-    height: 65px;
+    position: relative;
+    width: 545px;
+    top: 100px;
     left: 48px;
-    top: 543px;
-    font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -142,36 +146,35 @@ em strong
 {
     position: absolute;
     width: 548px;
-    height: 0px;
-    left: 446px;
-    top: 1137px;
+    left: 134px;
+    top: 900px;
     border: 1px solid #B9BBBB;
 }
 
 h3
 {
-    position: absolute;
+    position: relative;
     width: 453px;
-    height: 66px;
-    left: 360px;
-    top: 1186px;
-    font-family: Nunito;
+    height:66px;
+    left: 48px;
+    top: 280px;
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
     line-height: 55px;
     text-transform: capitalize;
+    
     color: #3BA3B9;
 }
 
 #texto_benefícios
 {
-    position: absolute;
+
+    position: relative;                                  
     width: 261px;
-    height: 104px;
-    left: 360px;
-    top: 1252px;
-    font-family: Roboto;
+    left: 48px;
+    top: 280px;
+
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -179,28 +182,36 @@ h3
     color: #000000;
 }
 
-.rodape
+.fundo_azul
 {
-    position: absolute;
+    position: relative;
+    top: -450px;
     width: 704px;
-    height: 124px;
-    left: 368px;
-    top: 1673px;
+    height: 361px;
+    margin: 0 auto;
+    
     background: #41A9CB;
-    border-radius: 10px; 
+    border-radius: 10px;
+
 }
+
+.fundo_azul li
+{
+
+    
+    width: 50%;
+}
+
 
 #mapa
 {
-    position: absolute;
     width: 705px;
-    height: 349.52px;
-    left: 0px;
-    top: -280px;
+    top: 20px;
     background: url(mapa.png);
     border-radius: 67px; 
 }
 
+/*
 #palavra_mapa
 {
     position: absolute;
@@ -226,3 +237,5 @@ h3
     background: url("—Pngtree—marker glyph black icon_3755467.png");
     transform: rotate(25.83deg); 
 }
+
+*/
