@@ -27,6 +27,23 @@ header
 
 }
 
+#titulo
+{
+    position: absolute;
+    width: 353px;
+    height: 87px;
+    left: 35px;
+    top: 118px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 70px;
+
+    color: #FFFFFF;
+}
+
 #logo
 {
     position: absolute;
@@ -34,11 +51,6 @@ header
     Height: 316px;
     Top :-13px;
     Left :-200px;
-}
-
-h1
-{
-    padding-left: 20px;
 }
 
 nav
@@ -76,9 +88,95 @@ nav a:hover
     text-decoration: underline;
 }
 
-/*parte principal da pagina*/
+.produtos
+{
+    width: 940px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
 
-.principal
+.produtos li
+{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;  
+    margin: 0 1.5%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+
+    /*Os proximos cod e os do quadrado legal*/
+    border: 3px solid #000000;
+    border-radius: 20px;
+}
+
+.produtos li:hover
+{
+    border-color:  #37B1CC;
+}
+
+.produtos li:active
+{
+    border-color:  #FFFFFF;
+}
+
+.produtos li:hover h2
+{
+    font-size: 48px;
+}
+
+
+.produtos h2
+{
+    font-style: normal;
+    font-weight: medium;
+    font-size: 40px;  
+}
+
+.preco-produto
+{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.descricao-produto
+{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.imagem-produtos
+{
+    width: 195px;   
+}
+
+.logo-rodape
+{
+
+    Width: 270px;
+    Height: 290px;
+    
+}
+
+
+footer
+{
+    text-align: center;
+    background: linear-gradient(180deg, #29B6D1 0%, rgba(196, 196, 196, 0) 100%), #476BA0;
+    
+}
+
+.copyright
+{
+    padding-block: 1%;
+}
+
+/*algumas coisas pra pagina de contato. acima tb tem(porem e compoartilhado)*/
+
+.principal_contato
 {
     position: relative;
     top: -80px;
@@ -91,7 +189,7 @@ nav a:hover
  
 }
 
-.principal li
+.principal_contato li
 {
     display: inline-block;
 
@@ -99,143 +197,62 @@ nav a:hover
     
 }
 
-#foto_principal
-{
-    width: 800px;
-    left: 312px;
-    top: 204px; 
-    background: url(Banner.jpg);
-    border-radius: 0px 0px 10px 10px;
-}
-
-h2
+h3
 {
     position: relative;
     width: 293px;
     height: 65px;
-    left: 48px;
-    top: 50px;
+    left: 300px;
+    top: 60px;
     font-style: normal;
     font-weight: 600;
     font-size: 52px;
     line-height: 71px;
     text-transform: capitalize;
-    
-    color: #3BA3B9;
 }
 
-.texto_principal
-{
-    position: relative;
-    width: 545px;
-    top: 100px;
-    left: 48px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 26px;
-    color: #000000;  
-}
-
-em strong
-{
-    color: #009EB4;
-}
-
-.linha_meio
+.linha_contato
 {
     position: absolute;
     width: 548px;
-    left: 134px;
-    top: 900px;
+    left: 120px;
+    top: 140px;
     border: 1px solid #B9BBBB;
 }
 
-h3
+.pergunta
 {
     position: relative;
-    width: 453px;
-    height:66px;
-    left: 48px;
-    top: 280px;
+    width: 100%;
+    height: 65px;
+    left: 270px;
+    top: 70px;
     font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 55px;
-    text-transform: capitalize;
-    
-    color: #3BA3B9;
+    font-weight: 62;
+    font-size: 30px;
+    line-height: 70px;
 }
 
-#texto_benefícios
+main
 {
-
-    position: relative;                                  
-    width: 261px;
-    left: 48px;
-    top: 280px;
-
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 26px;
-    color: #000000;
-}
-
-.fundo_azul
-{
-    position: relative;
-    top: -450px;
-    width: 704px;
-    height: 361px;
+    width: 940px;
     margin: 0 auto;
-    
-    background: #41A9CB;
-    border-radius: 10px;
-
 }
 
-.fundo_azul li
+form
 {
+    margin: 100px 0;
+}
 
-    
+form input 
+{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
     width: 50%;
 }
 
 
-#mapa
-{
-    width: 705px;
-    top: 20px;
-    background: url(mapa.png);
-    border-radius: 67px; 
-}
 
-/*
-#palavra_mapa
-{
-    position: absolute;
-    width: 247px;
-    height: 29px;
-    left: 228px;
-    top: 79px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 29px;
-    color: #FFFFFF;
-}
 
-#marcador
-{
-    position: absolute;
-    width: 42.04px;
-    height: 54.89px;
-    left: 228px;
-    top: 0px;
-    background: url("—Pngtree—marker glyph black icon_3755467.png");
-    transform: rotate(25.83deg); 
-}
 
-*/

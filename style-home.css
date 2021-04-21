@@ -1,0 +1,231 @@
+body
+{
+    background: #E5E5E5;
+    Width :100%;
+    Height :100%;
+    Top :100%;
+    Left :-92px;
+}
+
+header
+{
+    width: 100%;
+    height: 289px;
+    left: 0px;
+    top: 0px;
+    padding: 20px 0;  /*importante*/ 
+    background: 
+    linear-gradient(180deg, #29B6D1 0%, rgba(196, 196, 196, 0) 100%),
+    #476BA0;
+}
+
+.caixa  /*O que faz os itens não ficare flutuando(quando tirar zoom)*/
+{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+#logo
+{
+    position: absolute;
+    Width: 270px;
+    Height: 316px;
+    Top :-13px;
+    Left :-200px;
+}
+
+h1
+{
+    padding-left: 20px;
+}
+
+nav
+{
+    position: absolute;
+    top: 152px;
+    right: -30px;
+
+}
+
+nav li
+{
+    display: inline;
+    margin: 0 0 0 15px
+}
+
+nav a
+{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bolder;
+    font-size: 22px;
+    line-height: -50px;
+
+    font-style: normal;
+    text-decoration: none;
+    font-family: Rozha One;
+
+}
+
+nav a:hover
+{
+    /*QUANDO PASSO A SETA EM CIMA MUDA A COR DO LUGAR*/
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+/*parte principal da pagina*/
+
+.principal
+{
+    position: relative;
+    top: -80px;
+    width: 800px;
+    height: 1589px;
+    margin: 0 auto;  
+    
+    background: #FFFFFF;
+    border-radius: 30px;
+ 
+}
+
+.principal li
+{
+    display: inline-block;
+
+    width: 50%;
+    
+}
+
+#foto_principal
+{
+    width: 800px;
+    left: 312px;
+    top: 204px; 
+    background: url(Banner.jpg);
+    border-radius: 0px 0px 10px 10px;
+}
+
+h2
+{
+    position: relative;
+    width: 293px;
+    height: 65px;
+    left: 48px;
+    top: 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 71px;
+    text-transform: capitalize;
+    
+    color: #3BA3B9;
+}
+
+.texto_principal
+{
+    position: relative;
+    width: 545px;
+    top: 100px;
+    left: 48px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;  
+}
+
+em strong
+{
+    color: #009EB4;
+}
+
+.linha_meio
+{
+    position: absolute;
+    width: 548px;
+    left: 134px;
+    top: 900px;
+    border: 1px solid #B9BBBB;
+}
+
+h3
+{
+    position: relative;
+    width: 453px;
+    height:66px;
+    left: 48px;
+    top: 272px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 55px;
+    text-transform: capitalize;
+    
+    color: #3BA3B9;
+}
+
+#texto_benefícios
+{
+
+    position: relative;                                  
+    width: 261px;
+    left: 48px;
+    top: 275px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.rodape
+{
+    position: absolute;
+    width: 704px;
+    height: 124px;
+    left: 325px;
+    top: 1695px;
+    background: #41A9CB;
+    border-radius: 10px; 
+}
+
+#mapa
+{
+    position: absolute;
+    width: 705px;
+    height: 349.52px;
+    left: 0px;
+    top: -280px;
+    background: url(mapa.png);
+    border-radius: 67px; 
+}
+
+#palavra_mapa
+{
+    position: absolute;
+    width: 247px;
+    height: 29px;
+    left: 228px;
+    top: 79px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+#marcador
+{
+    position: absolute;
+    width: 42.04px;
+    height: 54.89px;
+    left: 228px;
+    top: 0px;
+    background: url("—Pngtree—marker glyph black icon_3755467.png");
+    transform: rotate(25.83deg); 
+}
