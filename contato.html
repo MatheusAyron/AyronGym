@@ -26,30 +26,19 @@
 
         <main>
             <div class= "principal_contato"> 
-
                 <h3>Contato</h3>
                 <div class= "linha_contato"></div>
                 <p class="pergunta">Tem alguma pergunta ?</p>
-
                 <form>
-                    <input type="text" name="nome" value="" placeholder="Seu nome" >
-
-                    <input type="text" name="e-mail" value="" placeholder="Seu e-mail">
-
-                    <input type="texte" name="mensagem" value="" placeholder="Sua mensagem">
-
-                    <!--<textarea></textarea>  um quadrado pra escrever-->
-
-                    <input type="submit" value="Enviar mensagem">
-
-                    <label><input type="checkbox">Gostaria de receber novidades ?</label>
-                    
-
-
-                </form>
-                
+                    <fieldset>
+                        <input type="text" name="nome" value="" placeholder="Seu nome" class="input-padrao" required>  <!-- "required" faz com que o campo seja obrigatorio-->
+                        <input type="email" name="e-mail" value="" placeholder="Seu e-mail" class="input-padrao" required>
+                        <textarea cols="20" rows="10" placeholder="Sua mensagem" class="input-padrao"></textarea>  
+                        <input type="submit" value="Enviar mensagem">
+                        <label class="checkbox"><input type="checkbox">Gostaria de receber novidades?</label>                    
+                    </fieldset>
+                </form>               
             </div>
-
         </main>
 
         <footer></footer>

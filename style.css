@@ -214,8 +214,8 @@ h3
 .linha_contato
 {
     position: absolute;
-    width: 548px;
-    left: 120px;
+    width: 500px;
+    left: 150px;
     top: 140px;
     border: 1px solid #B9BBBB;
 }
@@ -241,17 +241,55 @@ main
 
 form
 {
-    margin: 100px 0;
+    margin: 120px ;
 }
 
-form input 
+form input, form textarea
+{ 
+    margin:20px;  
+}
+
+.input-padrao
 {
     display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
+    padding: 10px 5px ;
+    width: 90%;
 }
 
+
+.checkbox
+{
+    display: block;
+    text-align: center;   
+}
+
+
+
+/*
+.input-nome
+{
+   
+    height: 20px;
+    left: 412px;
+    top: 592px;
+}
+
+.input-email
+{
+   
+    height: 20px;
+    left: 412px;
+    top: 592px;
+}
+
+.input-mensagem
+{
+   
+    height: 20px;
+    left: 412px;
+    top: 592px;
+}
+*/
 
 
 
