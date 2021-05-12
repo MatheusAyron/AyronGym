@@ -104,20 +104,24 @@ nav a:hover
     margin: 0 1.5%;
     padding: 50px 20px;
     box-sizing: border-box;
+    
+    
 
     /*Os proximos cod e os do quadrado legal*/
-    border: 3px solid #000000;
+    border: 3px solid;
     border-radius: 20px;
 }
 
 .produtos li:hover
 {
     border-color:  #37B1CC;
+    background: #41A9CB;
+    transition: 0.5s background;
 }
 
-.produtos li:active
+.produtos li:active     
 {
-    border-color:  #FFFFFF;
+    border-color:  #FFFFFF;   
 }
 
 .produtos li:hover h2
@@ -174,7 +178,7 @@ footer
     padding-block: 1%;
 }
 
-/*algumas coisas pra pagina de contato. acima tb tem(porem e compoartilhado)*/
+/*algumas coisas pra pagina de contato. acima tb tem(porem e compartilhado)*/
 
 .principal_contato
 {
@@ -263,6 +267,74 @@ form input, form textarea
     text-align: center;   
 }
 
+.enviar
+{
+    position: absolute;
+    width: 256px;
+    left: 265px;
+    top: 630px;
+
+    padding: 5px 0;
+     
+    background: #000000;
+    color: #FFFFFF;
+    font-weight: bold;
+    
+    border: none;
+    border-radius: 3px;
+    transition: 0.5s all;
+    cursor: pointer; /*COLOCA A MÃOZINHA NO CURSOR*/
+}
+
+.enviar:hover
+{
+    background: #41A9CB;
+    transform:  scale(1.1);  /*rotate(360deg)  <--- faz com que o item gire na tela */
+    
+
+}
+
+.linha_central_contato
+{
+    position: absolute;
+    text-align: center;
+    width: 600px;
+    left: 100px;
+    top: 720px;
+    border: 0.5px solid #B9BBBB;
+
+  
+}
+
+.linha_vertical_contato
+{
+    position: absolute;
+    width: 332px;
+    height: 0px;
+    left: 250px;
+    top: 887px;
+    
+    border: 1px solid #B9BBBB;
+    transform: rotate(-90deg);
+}
+
+.informacoes-atendimento li
+{
+    display: inline-block;
+    text-align: left;
+    padding: 50px 120px;
+    font-family: Arial;
+    font-style: normal;
+    line-height: 26px;
+}
+
+em
+{
+    font-weight: bold;
+    font-family: Arial;
+    color: #41A9CB;
+}
+
 
 
 /*
@@ -290,7 +362,3 @@ form input, form textarea
     top: 592px;
 }
 */
-
-
-
-
