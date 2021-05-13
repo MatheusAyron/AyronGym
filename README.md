@@ -1,4 +1,4 @@
-# Academia-2.0
+# AyronGym (Academia-2.0)
 
 Este é o meu primeiro projeto desenvolvendo uma tela WEB, por meio de HTML e CSS por hora.
 <br>.<br>
