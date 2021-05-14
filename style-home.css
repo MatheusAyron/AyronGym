@@ -187,8 +187,8 @@ h3
     position: absolute;
     width: 704px;
     height: 124px;
-    left: 325px;
-    top: 1695px;
+    left: 50px;
+    top: 91%;
     background: #41A9CB;
     border-radius: 10px; 
 }
@@ -203,6 +203,7 @@ h3
     background: url(mapa.png);
     border-radius: 67px; 
 }
+
 
 #palavra_mapa
 {

@@ -185,7 +185,7 @@ footer
     position: relative;
     top: -80px;
     width: 800px;
-    height: 1589px;
+    height: 1200px;
     margin: 0 auto;  
     
     background: #FFFFFF;
@@ -309,23 +309,40 @@ form input, form textarea
 .linha_vertical_contato
 {
     position: absolute;
-    width: 332px;
+    width: 300px;
     height: 0px;
     left: 250px;
-    top: 887px;
+    top: 870px;
     
     border: 1px solid #B9BBBB;
     transform: rotate(-90deg);
 }
 
-.informacoes-atendimento li
+.informacoes-atendimento 
 {
-    display: inline-block;
-    text-align: left;
+    position: relative;
+
     padding: 50px 120px;
     font-family: Arial;
     font-style: normal;
+    
+}
+
+.informacoes-atendimento li
+{
+    display: inline;
     line-height: 26px;
+    
+}
+
+#informacao1
+{
+    text-align: left;
+}
+
+#informacao2
+{
+    text-align: right;
 }
 
 em
@@ -334,6 +351,15 @@ em
     font-family: Arial;
     color: #41A9CB;
 }
+
+#logo-footer
+{
+    margin-top: 130px;
+    width: 100px;
+    height: 100px;
+    margin-left: -15%;
+}
+
 
 
 
