@@ -1,6 +1,6 @@
 body
 {
-    background: #E5E5E5;
+    background: #FFFFFF;
     Width :100%;
     Height :100%;
     Top :100%;
@@ -13,10 +13,7 @@ header
     height: 289px;
     left: 0px;
     top: 0px;
-    padding: 20px 0;  /*importante*/ 
-    background: 
-    linear-gradient(180deg, #29B6D1 0%, rgba(196, 196, 196, 0) 100%),
-    #476BA0;
+    padding: 20px 0;  /*importante*/  
 }
 
 .caixa  /*O que faz os itens não ficare flutuando(quando tirar zoom)*/
@@ -24,7 +21,6 @@ header
     position: relative;
     width: 940px;
     margin: 0 auto;
-
 }
 
 #logo
@@ -32,7 +28,7 @@ header
     position: absolute;
     Width: 270px;
     Height: 316px;
-    Top :-13px;
+    Top :-30px;
     Left :-200px;
 }
 
@@ -44,9 +40,8 @@ h1
 nav
 {
     position: absolute;
-    top: 152px;
+    top: 120px;
     right: -30px;
-
 }
 
 nav li
@@ -72,8 +67,8 @@ nav a
 nav a:hover
 {
     /*QUANDO PASSO A SETA EM CIMA MUDA A COR DO LUGAR*/
-    color: #FFFFFF;
-    text-decoration: underline;
+    color: #0077FF;
+    /*text-decoration: underline; (pra colocar/tirar linha abaixo da palavra)*/
 }
 
 /*parte principal da pagina*/
@@ -86,7 +81,7 @@ nav a:hover
     height: 1589px;
     margin: 0 auto;  
     
-    background: #FFFFFF;
+    background: #EBEBEB;
     border-radius: 30px;
  
 }
@@ -94,9 +89,7 @@ nav a:hover
 .principal li
 {
     display: inline-block;
-
-    width: 50%;
-    
+    width: 50%; 
 }
 
 #foto_principal
@@ -105,7 +98,7 @@ nav a:hover
     left: 312px;
     top: 204px; 
     background: url(Banner.jpg);
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 h2
@@ -121,7 +114,7 @@ h2
     line-height: 71px;
     text-transform: capitalize;
     
-    color: #3BA3B9;
+    color: #0077FF;
 }
 
 .texto_principal
@@ -139,7 +132,7 @@ h2
 
 em strong
 {
-    color: #009EB4;
+    color: #0077FF;
 }
 
 .linha_meio
@@ -164,7 +157,7 @@ h3
     line-height: 55px;
     text-transform: capitalize;
     
-    color: #3BA3B9;
+    color: #0077FF;
 }
 
 #texto_benefícios
@@ -189,7 +182,7 @@ h3
     height: 124px;
     left: 50px;
     top: 91%;
-    background: #41A9CB;
+    background: #0077FF;
     border-radius: 10px; 
 }
 

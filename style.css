@@ -1,6 +1,6 @@
 body
 {
-    background: #E5E5E5;
+    background: #ffffff;
     Width :100%;
     Height :100%;
     Top :100%;
@@ -10,13 +10,10 @@ body
 header
 {
     width: 100%;
-    height: 289px;
+    height: 190px;
     left: 0px;
     top: 0px;
     padding: 20px 0;  /*importante*/ 
-    background: 
-    linear-gradient(180deg, #29B6D1 0%, rgba(196, 196, 196, 0) 100%),
-    #476BA0;
 }
 
 .caixa  /*O que faz os itens não ficare flutuando(quando tirar zoom)*/
@@ -24,24 +21,6 @@ header
     position: relative;
     width: 940px;
     margin: 0 auto;
-
-}
-
-#titulo
-{
-    position: absolute;
-    width: 353px;
-    height: 87px;
-    left: 35px;
-    top: 118px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 60px;
-    line-height: 70px;
-
-    color: #FFFFFF;
 }
 
 #logo
@@ -49,16 +28,15 @@ header
     position: absolute;
     Width: 270px;
     Height: 316px;
-    Top :-13px;
+    Top :-30px;
     Left :-200px;
 }
 
 nav
 {
     position: absolute;
-    top: 152px;
+    top: 120px;
     right: -30px;
-
 }
 
 nav li
@@ -84,8 +62,7 @@ nav a
 nav a:hover
 {
     /*QUANDO PASSO A SETA EM CIMA MUDA A COR DO LUGAR*/
-    color: #FFFFFF;
-    text-decoration: underline;
+    color: #0077FF;
 }
 
 .produtos
@@ -109,19 +86,20 @@ nav a:hover
 
     /*Os proximos cod e os do quadrado legal*/
     border: 3px solid;
+    border-color: #000000;
     border-radius: 20px;
 }
 
 .produtos li:hover
 {
-    border-color:  #37B1CC;
-    background: #41A9CB;
+    border-color:  #B5B5B5;
+    background: #B5B5B5;
     transition: 0.5s background;
 }
 
 .produtos li:active     
 {
-    border-color:  #FFFFFF;   
+    border-color:  #0077FF;   
 }
 
 .produtos li:hover h2
@@ -132,6 +110,7 @@ nav a:hover
 
 .produtos h2
 {
+    color: #0077FF;
     font-style: normal;
     font-weight: medium;
     font-size: 40px;  
@@ -139,6 +118,7 @@ nav a:hover
 
 .preco-produto
 {
+    color: #0077FF;
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
@@ -157,20 +137,9 @@ nav a:hover
     width: 195px;   
 }
 
-.logo-rodape
-{
-
-    Width: 270px;
-    Height: 290px;
-    
-}
-
-
 footer
 {
-    text-align: center;
-    background: linear-gradient(180deg, #29B6D1 0%, rgba(196, 196, 196, 0) 100%), #476BA0;
-    
+    text-align: center;  
 }
 
 .copyright
@@ -183,12 +152,12 @@ footer
 .principal_contato
 {
     position: relative;
-    top: -80px;
+    top: 19px;
     width: 800px;
     height: 1200px;
     margin: 0 auto;  
     
-    background: #FFFFFF;
+    background: #EBEBEB;
     border-radius: 30px;
  
 }
@@ -196,13 +165,12 @@ footer
 .principal_contato li
 {
     display: inline-block;
-
     width: 50%;
-    
 }
 
 h3
 {
+    color: #0077FF;
     position: relative;
     width: 293px;
     height: 65px;
@@ -260,7 +228,6 @@ form input, form textarea
     width: 90%;
 }
 
-
 .checkbox
 {
     display: block;
@@ -288,10 +255,8 @@ form input, form textarea
 
 .enviar:hover
 {
-    background: #41A9CB;
+    background: #0077FF;
     transform:  scale(1.1);  /*rotate(360deg)  <--- faz com que o item gire na tela */
-    
-
 }
 
 .linha_central_contato
@@ -302,8 +267,6 @@ form input, form textarea
     left: 100px;
     top: 720px;
     border: 0.5px solid #B9BBBB;
-
-  
 }
 
 .linha_vertical_contato
@@ -332,7 +295,6 @@ form input, form textarea
 {
     display: inline;
     line-height: 26px;
-    
 }
 
 #informacao1
@@ -349,7 +311,7 @@ em
 {
     font-weight: bold;
     font-family: Arial;
-    color: #41A9CB;
+    color: #0077FF;
 }
 
 #logo-footer
@@ -359,32 +321,3 @@ em
     height: 100px;
     margin-left: -15%;
 }
-
-
-
-
-/*
-.input-nome
-{
-   
-    height: 20px;
-    left: 412px;
-    top: 592px;
-}
-
-.input-email
-{
-   
-    height: 20px;
-    left: 412px;
-    top: 592px;
-}
-
-.input-mensagem
-{
-   
-    height: 20px;
-    left: 412px;
-    top: 592px;
-}
-*/
