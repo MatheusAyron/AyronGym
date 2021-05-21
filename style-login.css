@@ -1,3 +1,8 @@
+html
+{
+    height: 100%;
+}
+
 body
 {
     background: #FFFFFF;
@@ -110,6 +115,78 @@ nav a:hover
     line-height: 20px;
 
     color: #0077FF;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    /* height: 100vh; */ /* <--- ele centraliza no centro na pagina a DIV*/
+}
+
+.content /* Esta nas DUAS DIV principais, fora as class que individualizam ela*/
+{
+    background-color: #B9BBBB;
+    border-radius: 15px;
+    width: 70%;
+    height: 415px;
+    justify-content: space-between; /* deixar uma espaço entre as DIV*/
+    align-items: center;
+    position: relative;
+}
+
+.content::before
+{
+    content: "";
+    position: absolute;
+    background-color: #0077FF;
+    width: 40%;
+    height: 100%;
+}
+
+.title
+{
+    color: #FFFFFF;
+    font-size: 28px;
+    text-transform: capitalize;
+}
+
+.first-content
+{
+    display: flex;
+}
+
+.first-column
+{
+    text-align: center;
+    flex: 1 0 auto;
+    z-index: 10;
+    font-family: "roboto";
+}
+
+.second-column
+{
+    flex: 2 0 auto;
+    font-family: "roboto";
+}
+
+.list-social-media
+{
+    display: flex;
+}
+
+.form
+{
+    /* MUITO BOM PRA FAZER FORMULARIOS*/
+    display: flex;
+    flex-direction: column;
+}
+
+.second-content
+{
+    position: absolute;
+    display: none;
 }
 
 
