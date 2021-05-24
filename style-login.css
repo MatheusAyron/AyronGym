@@ -127,9 +127,8 @@ nav a:hover
 
 .content /* Esta nas DUAS DIV principais, fora as class que individualizam ela*/
 {
-    background-color: #B9BBBB;
     border-radius: 15px;
-    width: 70%;
+    width: 960px;
     height: 415px;
     justify-content: space-between; /* deixar uma espaço entre as DIV*/
     align-items: center;
@@ -147,9 +146,75 @@ nav a:hover
 
 .title
 {
-    color: #FFFFFF;
     font-size: 28px;
     text-transform: capitalize;
+}
+
+.title-primary
+{
+    color: #FFFFFF;
+}
+
+.title-second
+{
+    color: #0077FF;
+}
+
+.description
+{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.description-primary
+{
+    color: #fff;
+}
+
+.description-second
+{
+    color: #7f8c8d;
+}
+
+.btn
+{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border-width: 0;
+}
+
+.btn-primary
+{
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+}
+
+.btn-primary:hover
+{
+    background-color: #FFFFFF;
+    color: #0077FF;
+    transition: 0.5s;
+}
+
+.btn-second
+{
+    background-color: #0077FF;
+    border: 1px solid;
+}
+
+.btn-second:hover
+{
+    background-color: #fff;
+    color: #0077FF;
+    transition: 0.5s;
 }
 
 .first-content
@@ -169,11 +234,31 @@ nav a:hover
 {
     flex: 2 0 auto;
     font-family: "roboto";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .list-social-media
 {
     display: flex;
+    list-style-type: none;
+}
+
+.item-social-media
+{
+    border: 1px solid #B9BBBB;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin: 10px;
+}
+
+.item-social-media a 
+{
+    color: #B9BBBB;
 }
 
 .form
@@ -181,6 +266,29 @@ nav a:hover
     /* MUITO BOM PRA FAZER FORMULARIOS*/
     display: flex;
     flex-direction: column;
+    width: 55%;
+}
+
+.form input
+{
+    height: 45px;
+    border: none;
+    background-color: #ecf0f1;
+    width: 100%;
+}
+
+.label-input
+{
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.icon-modify
+{
+    color: #7f8c8d;
+    padding: 0 5px; /* separou os icon do input*/
 }
 
 .second-content
