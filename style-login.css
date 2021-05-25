@@ -142,6 +142,11 @@ nav a:hover
     background-color: #0077FF;
     width: 40%;
     height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+
+    left: 60%;  /*sdfhshsn*/
 }
 
 .title
@@ -189,6 +194,7 @@ nav a:hover
     width: 150px;
     align-self: center;
     border-width: 0;
+    margin-top: 1rem;
 }
 
 .btn-primary
@@ -220,6 +226,7 @@ nav a:hover
 .first-content
 {
     display: flex;
+    display: none; /*DESAPARECE PARA FAZER A OUTRA PARTE*/
 }
 
 .first-column
@@ -239,6 +246,11 @@ nav a:hover
     align-items: center;
 }
 
+.social-media
+{
+    margin: 1rem 0; /* ESPASSAMENTO ENTRE O TITULO E AS SOCIAL-MEDIA*/
+}
+
 .list-social-media
 {
     display: flex;
@@ -253,12 +265,19 @@ nav a:hover
     height: 35px;
     line-height: 35px;
     text-align: center;
-    margin: 10px;
+    color: #B9BBBB;
 }
 
-.item-social-media a 
+.link-social-media:not(:first-child) /* FAZ COM QUE TODAS AS OUTRAS "COISAS" TENHAM MARGIM MENOS A PRIMEIRA*/
 {
-    color: #B9BBBB;
+    margin-left: 10px;
+}
+
+.link-social-media:hover/* ESSE PRIMEIRO E A BOLINHA (<a>)*/ .item-social-media /*ESSE E A IMAGEM (<li>)*/  /* <-----IMPORTANTE------>*/
+{ /*RESUMINDO: QUANDO O HOVER ESTIVER ATIVADO A (.item-social-media) IRA FICAR COM OS SEGUINTES PARAMETROS*/
+    background-color: #0077FF;
+    border-color: #0077FF;
+    color: #fff;
 }
 
 .form
@@ -291,10 +310,38 @@ nav a:hover
     padding: 0 5px; /* separou os icon do input*/
 }
 
+
+/*Second content*/
+
 .second-content
 {
     position: absolute;
-    display: none;
+    display: flex;
+}
+
+/*ESSE ORDER E PARA MUDAR A PARTE AZUL PARA A DIREITA (SEM ANIMAÇÃO)*/
+.second-content .first-column
+{
+    order: 2;
+}
+
+.second-content .second-column
+{
+    order: 1;
+}
+
+.password
+{
+    color: #0077FF;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.password::first-letter
+{
+    text-transform: capitalize;
 }
 
 
