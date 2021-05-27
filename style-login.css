@@ -146,7 +146,7 @@ nav a:hover
     border-bottom-left-radius: 15px;
 
 
-    left: 60%;  /*sdfhshsn*/
+    left: 0; /*o bloco azul todo pra esquerda*/
 }
 
 .title
@@ -226,20 +226,24 @@ nav a:hover
 .first-content
 {
     display: flex;
-    display: none; /*DESAPARECE PARA FAZER A OUTRA PARTE*/
+}
+
+.first-content .second-column
+{
+    z-index: 11; /*o z-index: FAZ A SOBREPOSIÇÃO DOS ELEMENTOS;*/
 }
 
 .first-column
 {
     text-align: center;
-    flex: 1 0 auto;
+    width: 40%;
     z-index: 10;
     font-family: "roboto";
 }
 
 .second-column
 {
-    flex: 2 0 auto;
+    width: 60%;
     font-family: "roboto";
     display: flex;
     flex-direction: column;
@@ -278,6 +282,7 @@ nav a:hover
     background-color: #0077FF;
     border-color: #0077FF;
     color: #fff;
+    transition: 0.5s;
 }
 
 .form
@@ -291,9 +296,15 @@ nav a:hover
 .form input
 {
     height: 45px;
+    width: 100%;
     border: none;
     background-color: #ecf0f1;
-    width: 100%;
+}
+
+input:-webkit-autofill /* ELE TIRA ALGUMAS CONFIGURAÇÕES DO NAVEGADOR ,(não sei exatamente pra que serve)*/
+{
+    -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
+    -webkit-text-fill-color: #000 !important;
 }
 
 .label-input
@@ -323,11 +334,14 @@ nav a:hover
 .second-content .first-column
 {
     order: 2;
+    opacity: -1; /*no curso ele colocou (z-index: -1;)*/
 }
 
 .second-content .second-column
 {
     order: 1;
+    opacity: -1; /*no curso ele colocou (z-index: -1;)  mas aqui não funcionou*/
+    /*AS COISAS AINDA ESTÃO NA TELA, ELE SO DEIXA ELES INVISIVEIS. PÓREM EU CONSIGO INSPECIONAR OS OBEJETOS DA second-column*/
 }
 
 .password
@@ -344,4 +358,40 @@ nav a:hover
     text-transform: capitalize;
 }
 
+
+.sign-in-js .first-content .first-column,
+.sign-in-js .first-content .second-column
+{
+    opacity: -1; /*no curso ele colocou (z-index: -1;)  mas aqui não funcionou*/
+}
+
+.sign-in-js .second-content .first-column,
+.sign-in-js .second-content .second-column
+{
+    opacity: 1; /*COMO EU COLOQUEI OPACITY EU TIVE QUE COLOCAR O     (z-index: 11 AQUI);  PARA ELE FICAR EM PRIMEIRO PLANO, ELE SO USOU O z-index: ; PORÉM O MEU FOI OS DOIS*/
+    z-index: 11;
+}
+
+.sign-in-js .content::before
+{
+    left: 60%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.sign-up-js .second-content .first-column
+.sign-up-js .second-content .second-column
+{
+    opacity: -1;
+    z-index: -1;
+}
+
+.sign-up-js .first-content .first-column
+.sign-up-js .first-content .second-column
+{
+    opacity: 1; 
+    z-index: 11;
+}
 
