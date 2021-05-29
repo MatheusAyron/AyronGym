@@ -14,10 +14,11 @@ body
 header
 {
     width: 100%;
-    height: 289px;
+    /*height: 289px; <-- tava assim antes*/ 
+    height: 230px;
     left: 0px;
     top: 0px;
-    padding: 20px 0;  /*importante*/  
+    /*padding: 20px 0;  <-- tava assim antes*/  
 }
 
 .caixa  /*O que faz os itens não ficare flutuando(quando tirar zoom)*/
