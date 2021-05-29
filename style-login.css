@@ -365,11 +365,16 @@ input:-webkit-autofill /* ELE TIRA ALGUMAS CONFIGURAÇÕES DO NAVEGADOR ,(não s
     opacity: -1; /*no curso ele colocou (z-index: -1;)  mas aqui não funcionou*/
 }
 
-.sign-in-js .second-content .first-column,
 .sign-in-js .second-content .second-column
 {
     opacity: 1; /*COMO EU COLOQUEI OPACITY EU TIVE QUE COLOCAR O     (z-index: 11 AQUI);  PARA ELE FICAR EM PRIMEIRO PLANO, ELE SO USOU O z-index: ; PORÉM O MEU FOI OS DOIS*/
     z-index: 11;
+}
+
+.sign-in-js .second-content .first-column
+{
+    opacity: 2;
+    z-index: 13;
 }
 
 .sign-in-js .content::before
@@ -379,6 +384,15 @@ input:-webkit-autofill /* ELE TIRA ALGUMAS CONFIGURAÇÕES DO NAVEGADOR ,(não s
     border-bottom-left-radius: 0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    animation: slidein 3s;
+    z-index: 12;
+}
+
+.sign-up-js .content::before
+{
+    animation: slideout 3s;
+
+    z-index: 12; /*ele faz o movimento para direita */
 }
 
 .sign-up-js .second-content .first-column
@@ -389,9 +403,131 @@ input:-webkit-autofill /* ELE TIRA ALGUMAS CONFIGURAÇÕES DO NAVEGADOR ,(não s
 }
 
 .sign-up-js .first-content .first-column
+{
+    opacity: 2;
+    z-index: 13;
+}
+
 .sign-up-js .first-content .second-column
 {
     opacity: 1; 
     z-index: 11;
 }
 
+/* MOVIMENTO DO CONTEUDO(ESCRITA) ATRÁS DO CONTENT::before */
+
+.sign-in-js .first-content .second-column
+{
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoEsq 2s;
+}
+
+.sign-up-js .second-content .second-column
+{
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoDir 2s;
+}
+
+/* ANIMAÇÃO CSS PARA O CONTEUDO */ 
+
+@keyframes deslocamentoEsq
+{
+    from{
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+
+    25%{
+        left: -80px;
+        opacity: .5;
+    }
+
+    50%{
+        left: -100px;
+        opacity: .2;
+    }
+
+    to{
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes deslocamentoDir
+{
+    from{
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+
+    25%{
+        left: 80px;
+        opacity: .2;
+
+    }
+
+    50%{
+        left: 100px;
+        opacity: .5;
+    }
+
+    to{
+        left: 110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+
+/* ANIMAÇÃO CSS */
+
+@keyframes slidein
+{
+    from{
+        left: 0;
+        width: 40%;
+    }
+
+    25%{
+        left: 5%;
+        width: 50%;
+    }
+
+    75%{
+        left: 45%;
+        width: 50%;
+    }
+
+    to{
+        left: 60%;
+        width: 40%;
+    }
+}
+
+@keyframes slideout
+{
+    from{
+        left: 60%;
+        width: 40%;
+    }
+
+    25%{
+        left: 45%;
+        width: 50%;
+    }
+
+    75%{
+        left: 5%;
+        width: 50%;
+    }
+
+    to{
+        left: 0;
+        width: 40%;
+    }
+}
