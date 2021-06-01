@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 html
 {
     height: 100%;
@@ -9,7 +13,20 @@ body
     Width :100%;
     Height :100%;
     Top :100%;
+    transition: background 0.2s linear;
+
 }
+
+body.dark
+{
+    background-color: #333333;
+}
+
+body.dark .content::before
+{
+    background-color: #3664FF;
+}
+
 
 header
 {
@@ -80,11 +97,11 @@ nav a:hover
 .texto-principal
 {
     position: relative;
-    top: -120px;
-    width: 521px;
+    
+    /*width: 521px;*/
     height: 300px;
-    left: -360px;
-    margin: 0 auto;  
+
+   /* margin: 0 auto; */  
 }
 
 .texto
@@ -117,6 +134,68 @@ nav a:hover
 
     color: #0077FF;
 }
+
+/*Começo DARK AND LIGHT */
+
+.checkbox-body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    margin: 0;
+}
+
+.checkbox
+{
+    opacity: 0;
+    position: absolute;
+}
+
+.label
+{
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.0);
+}
+
+.ball
+{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transition: 0.2s linear;
+}
+
+.checkbox:checked + .label .ball /*TEM A .label ANTES, PQ ELA VEM PRIMEIRO NO HTML*/
+{
+    transform: translateX(24px); /*FAZ A BOLA MEXER*/
+}
+
+
+.fa-moon
+{
+    color: #f1c40f;
+}
+
+.fa-sun
+{
+    color: #f39c12;
+}
+
+
+/*Tela Cadastro + Login */
 
 .container
 {
