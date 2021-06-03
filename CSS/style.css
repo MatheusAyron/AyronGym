@@ -1,19 +1,43 @@
+html {
+    height: 100%;
+    font-family: 'roboto';
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    --bg: #FCFCFC;
+    --bg-panel: #EBEBEB;
+    --color-headings: #0077FF;
+    --color-text: #333333;
+    --color-btntext: #fff;
+}
+
+
 body
 {
-    background: #ffffff;
     Width :100%;
     Height :100%;
     Top :100%;
     Left :-92px;
+    background-color: var(--bg);
+    transition: background 0.1s linear;
 }
 
 header
 {
     width: 100%;
     height: 190px;
-    left: 0px;
-    top: 0px;
+    justify-content: center;
     padding: 20px 0;  /*importante*/ 
+
+    display: grid;
+    grid-template-columns: 100% auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "title switch"
+        "content content"
+    ;
 }
 
 .caixa  /*O que faz os itens não ficare flutuando(quando tirar zoom)*/
@@ -31,6 +55,67 @@ header
     Left :-230px;
 }
 
+/*COMEÇO BTN DARK*/
+
+h1
+{
+    padding-left: 20px;
+}
+
+p {
+    color: var(--color-text);
+    grid-area: content;
+}
+
+input[type=checkbox]
+{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background: grey;
+    top: 115px;
+    right: -110px;
+    float: right;
+    border-radius: 100px;
+    position: relative;
+}
+
+label::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input:checked + label {
+    background-color: var(--color-headings);
+}
+
+input:checked + label::after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 45px;
+}
+
+/*FIM BTN DARK*/
+
+
+
 nav
 {
     position: absolute;
@@ -47,7 +132,7 @@ nav li
 nav a
 {
     text-transform: uppercase;
-    color: #000000;
+    color: var(--color-text);
     font-weight: bolder;
     font-size: 22px;
     line-height: -50px;
@@ -61,7 +146,7 @@ nav a
 nav a:hover
 {
     /*QUANDO PASSO A SETA EM CIMA MUDA A COR DO LUGAR*/
-    color: #0077FF;
+    color: var(--color-headings);
 }
 
 .produtos
@@ -92,13 +177,13 @@ nav a:hover
 .produtos li:hover
 {
     border-color:  #B5B5B5;
-    background: #B5B5B5;
+    background: var(--bg-panel);
     transition: 0.5s background;
 }
 
 .produtos li:active     
 {
-    border-color:  #0077FF;   
+    border-color:  var(--color-headings);   
 }
 
 .produtos li:hover h2
@@ -109,7 +194,7 @@ nav a:hover
 
 .produtos h2
 {
-    color: #0077FF;
+    color: var(--color-headings);
     font-style: normal;
     font-weight: medium;
     font-size: 40px;  
@@ -117,7 +202,7 @@ nav a:hover
 
 .preco-produto
 {
-    color: #0077FF;
+    color: var(--color-headings);
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
@@ -153,10 +238,10 @@ footer
     position: relative;
     top: 19px;
     width: 800px;
-    height: 1200px;
+    height: 1150px;
     margin: 0 auto;  
     
-    background: #EBEBEB;
+    background: var(--bg-panel);
     border-radius: 30px;
  
 }
@@ -169,7 +254,7 @@ footer
 
 h3
 {
-    color: #0077FF;
+    color: var(--color-headings);
     position: relative;
     width: 293px;
     height: 65px;
@@ -188,7 +273,7 @@ h3
     width: 500px;
     left: 150px;
     top: 140px;
-    border: 1px solid #B9BBBB;
+    border: 0.5px solid #B9BBBB;
 }
 
 .pergunta
@@ -227,7 +312,7 @@ form input, form textarea
     width: 90%;
 }
 
-.checkbox
+.checkbox-label
 {
     display: block;
     text-align: center;   
@@ -243,7 +328,7 @@ form input, form textarea
     padding: 5px 0;
      
     background: #000000;
-    color: #FFFFFF;
+    color: var(--color-btntext);
     font-weight: bold;
     
     border: none;
@@ -254,7 +339,8 @@ form input, form textarea
 
 .enviar:hover
 {
-    background: #0077FF;
+    background: var(--color-headings);
+    color: #fff;
     transform:  scale(1.1);  /*rotate(360deg)  <--- faz com que o item gire na tela */
 }
 
@@ -310,7 +396,7 @@ em
 {
     font-weight: bold;
     font-family: Arial;
-    color: #0077FF;
+    color: var(--color-headings);
 }
 
 #logo-footer

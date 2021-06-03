@@ -1,3 +1,5 @@
+//ANIMAÇÃO LOGIN//
+
 var btnSignin = document.querySelector("#signin");
 var btnSignup = document.querySelector("#signup");
 
@@ -11,14 +13,3 @@ btnSignup.addEventListener("click", function ()
 {
     body.className = "sign-up-js";
 });
-
-
-//ANIMAÇÃO btn DARK/LIGHT//
-
-const checkbox = document.getElementById('checkbox');
-
-checkbox.addEventListener('change', () => {
-    //muda o tema do site//
-    document.body.classList.toggle('dark');
-});
-

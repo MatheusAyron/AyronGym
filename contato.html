@@ -11,6 +11,12 @@
     <body>
         <header>
             <div class="caixa">
+               
+                <div class="toggle">
+                    <input id="switch" type="checkbox" name="theme">
+                    <label for="switch">Toggle</label>
+                </div>
+
                 <h1><img id="logo" src ="Image/logo.png" alt="Logo da AyronGym"></h1>
                 
                 <nav>
@@ -18,7 +24,6 @@
                         <li id="home"><a href="index.html">Home</a></li>
                         <li id="produtos"><a href="produtos.html">produtos</a></li>
                         <li id="contato"><a href="contato.html">contato</a></li>
-                        <li id="about_us"><a href="">about us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -36,8 +41,6 @@
                         <textarea cols="20" rows="10" placeholder="Sua mensagem" class="input-padrao"></textarea>  
 
                         <input type="submit" value="Enviar mensagem" class="enviar">
-
-                        <label class="checkbox"><input type="checkbox">Gostaria de receber novidades?</label>                    
                     </fieldset>
                 </form> 
 
@@ -69,4 +72,6 @@
                 </div>
             </div>
         </main>
+        <script src="JS/mode.js"></script>
+    </body>
 </html>

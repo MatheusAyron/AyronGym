@@ -1,19 +1,44 @@
+html {
+    height: 100%;
+    font-family: 'roboto';
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    --bg: #FCFCFC;
+    --bg-panel: #EBEBEB;
+    --color-headings: #0077FF;
+    --color-text: #333333;
+}
+
 body
 {
-    background: #FFFFFF;
+
     Width :100%;
     Height :100%;
     Top :100%;
     Left :-92px;
+    background-color: var(--bg);
+    transition: background 0.1s linear;
 }
 
 header
 {
     width: 100%;
     height: 289px;
-    left: 0px;
-    top: 0px;
+    justify-content: center;
     padding: 20px 0;  /*importante*/  
+
+    /*background-color: var(--bg-panel); <- ISSO FAZ O HEADER TER COR*/
+
+    display: grid;
+    grid-template-columns: 100% auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "title switch"
+        "content content"
+    ;
 }
 
 .caixa  /*O que faz os itens não ficare flutuando(quando tirar zoom)*/
@@ -37,6 +62,60 @@ h1
     padding-left: 20px;
 }
 
+p {
+    color: var(--color-text);
+    grid-area: content;
+}
+
+input[type=checkbox]
+{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background: grey;
+    top: 115px;
+    right: -110px;
+    float: right;
+    border-radius: 100px;
+    position: relative;
+}
+
+label::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input:checked + label {
+    background-color: var(--color-headings);
+}
+
+input:checked + label::after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 45px;
+}
+
+/*FIM DO MODE DARK*/
+
+
+
 nav
 {
     position: absolute;
@@ -53,7 +132,7 @@ nav li
 nav a
 {
     text-transform: uppercase;
-    color: #000000;
+    color: var(--color-text);
     font-weight: bolder;
     font-size: 22px;
     line-height: -50px;
@@ -67,7 +146,7 @@ nav a
 nav a:hover
 {
     /*QUANDO PASSO A SETA EM CIMA MUDA A COR DO LUGAR*/
-    color: #0077FF;
+    color: var(--color-headings)
     /*text-decoration: underline; (pra colocar/tirar linha abaixo da palavra)*/
 }
 
@@ -81,7 +160,7 @@ nav a:hover
     height: 1589px;
     margin: 0 auto;  
     
-    background: #EBEBEB;
+    background: var(--bg-panel);
     border-radius: 30px;
  
 }
@@ -104,6 +183,7 @@ nav a:hover
 h2
 {
     position: relative;
+    margin: 0;
     width: 293px;
     height: 65px;
     left: 48px;
@@ -114,7 +194,7 @@ h2
     line-height: 71px;
     text-transform: capitalize;
     
-    color: #0077FF;
+    color: var(--color-headings);
 }
 
 .texto_principal
@@ -127,12 +207,12 @@ h2
     font-weight: 500;
     font-size: 22px;
     line-height: 26px;
-    color: #000000;  
+    color: var(--color-text);
 }
 
 em strong
 {
-    color: #0077FF;
+    color: var(--color-headings);
 }
 
 .linha_meio
@@ -141,7 +221,7 @@ em strong
     width: 548px;
     left: 134px;
     top: 900px;
-    border: 1px solid #B9BBBB;
+    border: 1px solid var(--color-text);
 }
 
 h3
@@ -157,7 +237,7 @@ h3
     line-height: 55px;
     text-transform: capitalize;
     
-    color: #0077FF;
+    color: var(--color-headings);
 }
 
 #texto_benefícios
@@ -172,7 +252,7 @@ h3
     font-weight: 500;
     font-size: 22px;
     line-height: 26px;
-    color: #000000;
+    color: var(--color-text);
 }
 
 .rodape
@@ -182,7 +262,7 @@ h3
     height: 124px;
     left: 50px;
     top: 91%;
-    background: #0077FF;
+    background: var(--color-headings);
     border-radius: 10px; 
 }
 
@@ -205,7 +285,6 @@ h3
     height: 29px;
     left: 228px;
     top: 79px;
-    font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
