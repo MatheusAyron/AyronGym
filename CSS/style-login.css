@@ -205,6 +205,7 @@ nav a:hover
     font-size: 10px;
     padding: 10px 50px;
     cursor: pointer;
+    text-decoration: none;
     font-weight: bold;
     width: 150px;
     align-self: center;
@@ -229,6 +230,8 @@ nav a:hover
 {
     background-color: #0077FF;
     border: 1px solid;
+    text-decoration: none;
+    
 }
 
 .btn-second:hover
