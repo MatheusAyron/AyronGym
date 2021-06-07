@@ -14,7 +14,6 @@ html {
 
 body
 {
-
     Width :100%;
     Height :100%;
     Top :100%;
@@ -51,7 +50,6 @@ header
 #logo
 {
     position: absolute;
-    
     Height: 316px;
     Top :-30px;
     Left :-230px;
@@ -115,7 +113,6 @@ label:active:after {
 /*FIM DO MODE DARK*/
 
 
-
 nav
 {
     position: absolute;
@@ -162,7 +159,6 @@ nav a:hover
     
     background: var(--bg-panel);
     border-radius: 30px;
- 
 }
 
 .principal li
@@ -242,7 +238,6 @@ h3
 
 #texto_benefícios
 {
-
     position: relative;                                  
     width: 261px;
     left: 48px;

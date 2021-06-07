@@ -241,6 +241,25 @@ nav a:hover
     transition: 0.5s;
 }
 
+a{
+    color: #fff
+}
+
+a:link
+{
+    text-decoration: none;
+}
+
+a:visited
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    color:#0077FF;
+}
+
 .first-content
 {
     display: flex;
