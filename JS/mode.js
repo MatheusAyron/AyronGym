@@ -43,4 +43,10 @@ checkbox.addEventListener("change",({target}) => {
 
   
 
-Cookies.get('darkMode') ? changeColors(darkMode) : changeColors(initialColors);
+Cookies.get('darkMode') ? changeColors(darkMode) : changeColors(initialColors)
+if (target.checked) {
+    document.querySelector("input[name=theme]")
+} else {
+    document.querySelector("")
+}
+ 
