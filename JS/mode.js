@@ -36,6 +36,11 @@ const changeColors = (colors) => {
 
 checkbox.addEventListener("change",({target}) => {
 
-    target.checked ? changeColors(darkMode) : changeColors(initialColors) //quando estiver checked ele vai estar com DARKMODE se não InitialColors//
-
+    target.checked ? changeColors(darkMode) : changeColors(initialColors); //quando estiver checked ele vai estar com DARKMODE se não InitialColors//
+    Cookies.set('darkMode', target.checked)
+    console.log("mudou")
 })
+
+  
+
+Cookies.get('darkMode') ? changeColors(darkMode) : changeColors(initialColors);
