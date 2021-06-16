@@ -16,8 +16,10 @@ body
 {
     Width :100%;
     Height :100%;
+    /*
     Top :100%;
     Left :-92px;
+    */
     background-color: var(--bg);
     transition: background 0.1s linear;
 }
@@ -296,4 +298,15 @@ h3
     top: 0px;
     background: url("—Pngtree—marker glyph black icon_3755467.png");
     transform: rotate(25.83deg); 
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 1040px) {
+    
+    .caixa{
+        width: 60%;
+        height: 100%;
+    }
+
 }

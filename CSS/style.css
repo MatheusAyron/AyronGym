@@ -281,6 +281,7 @@ h3
     position: relative;
     width: 100%;
     height: 65px;
+    margin: auto;
     left: 270px;
     top: 70px;
     font-style: normal;
@@ -400,4 +401,16 @@ em
     width: 100px;
     height: 100px;
     margin-left: -15%;
+}
+
+
+/*responsive*/
+
+@media screen and (max-width: 1040px) {
+    
+    .caixa{
+        width: 60%;
+        height: 100%;
+    }
+
 }
